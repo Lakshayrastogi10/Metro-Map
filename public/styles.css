@@ -1,0 +1,143 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  background-image: url("https://th.bing.com/th/id/R.3a5851ddc5613a022dcf2d7e461045e8?rik=2KzI0GTNa2Bj4A&riu=http%3a%2f%2fwww.gcmedia.in%2fimages%2fdmrc-services.png&ehk=oKhEoxrjCtym3mqYBFI8rFqErw%2fmwpio0Q%2fiXw5Ib0A%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 40px;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  opacity: 80%;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  opacity: 80%;
+}
+
+#result h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#result ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#result ul li {
+  margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/* Route Colors */
+/* Color formatting for station names */
+option[value*="~Y"] {
+  color: yellow;
+}
+
+option[value*="~B"] {
+  color: blue;
+}
+
+option[value*="~BY"] {
+  background: linear-gradient(90deg, blue, yellow);
+
+  -webkit-text-fill-color: transparent;
+}
+
+option[value*="~O"] {
+  color: orange;
+}
+
+option[value*="~BO"] {
+  background: linear-gradient(90deg, blue, orange);
+
+  -webkit-text-fill-color: transparent;
+}
+
+option[value*="~P"] {
+  color: pink;
+}
+
+option[value*="~PR"] {
+  background: linear-gradient(90deg, pink, red);
+
+  -webkit-text-fill-color: transparent;
+}
+
+#result {
+  padding: 10px;
+  animation: fadeIn 0.5s ease;
+}

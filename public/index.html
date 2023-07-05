@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro Map</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Metro Map</h1>
+    <form id="pathForm">
+      <label for="source">Source:</label>
+      <select id="source" required>
+        <option value="" selected disabled>Select source</option>
+        <option value="Noida Sector 62~B" data-color="blue">
+          Noida Sector 62
+        </option>
+        <option value="Botanical Garden~B" data-color="blue">
+          Botanical Garden
+        </option>
+        <option value="Yamuna Bank~B" data-color="blue">Yamuna Bank</option>
+        <option value="Rajiv Chowk~BY" data-color="blueyellow">
+          Rajiv Chowk
+        </option>
+        <option value="Vaishali~B" data-color="blue">Vaishali</option>
+        <option value="Moti Nagar~B" data-color="blue">Moti Nagar</option>
+        <option value="Janak Puri West~BO" data-color="blueorange">
+          Janak Puri West
+        </option>
+        <option value="Dwarka Sector 21~B" data-color="blue">
+          Dwarka Sector 21
+        </option>
+        <option value="Huda City Center~Y" data-color="yellow">
+          Huda City Center
+        </option>
+        <option value="Saket~Y" data-color="yellow">Saket</option>
+        <option value="Vishwavidyalaya~Y" data-color="yellow">
+          Vishwavidyalaya
+        </option>
+        <option value="Chandni Chowk~Y" data-color="yellow">
+          Chandni Chowk
+        </option>
+        <option value="New Delhi~YO" data-color="yelloworange">
+          New Delhi
+        </option>
+        <option value="AIIMS~Y" data-color="yellow">AIIMS</option>
+        <option value="Shivaji Stadium~O" data-color="orange">
+          Shivaji Stadium
+        </option>
+        <option value="DDS Campus~O" data-color="orange">DDS Campus</option>
+        <option value="IGI Airport~O" data-color="orange">IGI Airport</option>
+        <option value="Rajouri Garden~BP" data-color="bluepink">
+          Rajouri Garden
+        </option>
+        <option value="Netaji Subhash Place~PR" data-color="pinkred">
+          Netaji Subhash Place
+        </option>
+        <option value="Punjabi Bagh West~P" data-color="pink">
+          Punjabi Bagh West
+        </option>
+      </select>
+      <br />
+      <label for="destination">Destination:</label>
+      <select id="destination" required>
+        <option value="" selected disabled>Select destination</option>
+        <option value="Noida Sector 62~B" data-color="blue">
+          Noida Sector 62
+        </option>
+        <option value="Botanical Garden~B" data-color="blue">
+          Botanical Garden
+        </option>
+        <option value="Yamuna Bank~B" data-color="blue">Yamuna Bank</option>
+        <option value="Rajiv Chowk~BY" data-color="blueyellow">
+          Rajiv Chowk
+        </option>
+        <option value="Vaishali~B" data-color="blue">Vaishali</option>
+        <option value="Moti Nagar~B" data-color="blue">Moti Nagar</option>
+        <option value="Janak Puri West~BO" data-color="blueorange">
+          Janak Puri West
+        </option>
+        <option value="Dwarka Sector 21~B" data-color="blue">
+          Dwarka Sector 21
+        </option>
+        <option value="Huda City Center~Y" data-color="yellow">
+          Huda City Center
+        </option>
+        <option value="Saket~Y" data-color="yellow">Saket</option>
+        <option value="Vishwavidyalaya~Y" data-color="yellow">
+          Vishwavidyalaya
+        </option>
+        <option value="Chandni Chowk~Y" data-color="yellow">
+          Chandni Chowk
+        </option>
+        <option value="New Delhi~YO" data-color="yelloworange">
+          New Delhi
+        </option>
+        <option value="AIIMS~Y" data-color="yellow">AIIMS</option>
+        <option value="Shivaji Stadium~O" data-color="orange">
+          Shivaji Stadium
+        </option>
+        <option value="DDS Campus~O" data-color="orange">DDS Campus</option>
+        <option value="IGI Airport~O" data-color="orange">IGI Airport</option>
+        <option value="Rajouri Garden~BP" data-color="bluepink">
+          Rajouri Garden
+        </option>
+        <option value="Netaji Subhash Place~PR" data-color="pinkred">
+          Netaji Subhash Place
+        </option>
+        <option value="Punjabi Bagh West~P" data-color="pink">
+          Punjabi Bagh West
+        </option>
+      </select>
+      <br />
+      <button type="submit">Find Shortest Path</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
